@@ -1,6 +1,9 @@
 # Fat Tails
 Working through Nassim Taleb's Technical Incerto book about fat tailed statistics. [Link to ebook pdf](https://researchers.one/articles/statistical-consequences-of-fat-tails-real-world-preasymptotics-epistemology-and-applications/5f52699d36a3e45f17ae7e36)
 
+## Content
+All content so far is in the [notebooks/](./notebooks) folder.
+
 ## Highlights
 #### Chapter 3:
 * [10 Sigma Event](./notebooks/Notebook-04%20-%20Sympy%2010%20Sigma%20Event.ipynb)
