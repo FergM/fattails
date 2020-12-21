@@ -1,6 +1,8 @@
 # Fat Tails
 Working through Nassim Taleb's Technical Incerto book about fat tailed statistics. [Link to ebook pdf](https://researchers.one/articles/statistical-consequences-of-fat-tails-real-world-preasymptotics-epistemology-and-applications/5f52699d36a3e45f17ae7e36)
 
+I plan to develop the `fattails` module into a toolkit.
+
 ## Content
 Most content is in the [notebooks/](./notebooks) folder.
 
@@ -20,3 +22,11 @@ Most content is in the [notebooks/](./notebooks) folder.
 ##### Chapter 6:
 * [Correlation makes __Ellipticality__  look oval.](./notebooks/NB-19%20-%20Ellipticality.ipynb)
 * [A single point can blow up your __regression__](./notebooks/NB-16%20-%20Fat%20Tail%20Regression.ipynb)
+
+# External Resources
+E-Book PDFs
+* [Vol 1 of the Technical Incerto](https://researchers.one/articles/20.01.00018)
+
+Code Repositories:
+* [`ggtails` for plots using R](https://github.com/David-Salazar/ggtails)
+* [Collaborative Python project](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails)
