@@ -28,5 +28,5 @@ E-Book PDFs
 * [Vol 1 of the Technical Incerto](https://researchers.one/articles/20.01.00018)
 
 Code Repositories:
-* [`ggtails` for plots using R](https://github.com/David-Salazar/ggtails)
-* [Collaborative Python project](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails)
+* [`ggtails`](https://github.com/David-Salazar/ggtails) for plots using R
+* [StatisticalConsequencesOfFatTails](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails) collaborative Python code and commentaries.
