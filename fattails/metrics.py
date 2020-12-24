@@ -13,6 +13,7 @@ def mad(x):
     Returns
     -------
     mad : scalar
+          Mean Absolute Deviation of x
     """
 
     mean = np.mean(x)
