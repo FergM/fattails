@@ -23,6 +23,9 @@ Most content is in the [notebooks/](./notebooks) folder.
 * [Correlation makes __Ellipticality__  look oval.](./notebooks/NB-19%20-%20Ellipticality.ipynb)
 * [A single point can blow up your __regression__](./notebooks/NB-16%20-%20Fat%20Tail%20Regression.ipynb)
 
+##### Chapter 7:
+* [Uniform is Gaussian under __Central Limit Theorem__](./notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
+
 # External Resources
 E-Book PDFs
 * [Vol 1 of the Technical Incerto](https://researchers.one/articles/20.01.00018)
