@@ -1,19 +1,17 @@
 # Fat Tails
-Working through Nassim Taleb's Technical Incerto book about fat tailed statistics. [Link to ebook pdf](https://researchers.one/articles/statistical-consequences-of-fat-tails-real-world-preasymptotics-epistemology-and-applications/5f52699d36a3e45f17ae7e36)
-
-I plan to develop the `fattails` module into a toolkit.
+Fat Tailed Statistics package and Jupyter notebooks. Inspired by Nassim Taleb's Technical Incerto.
 
 ## Content
 
 ### Notebooks
 You can find a list of notebooks in [docs/notebooks.md](./docs/notebooks.md).
 
-Here are my favourite notebooks so far:
+My favourite notebooks so far:
 * [Central Limit Theorem: How the sum of Uniform values is Gaussian](./notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
 * [S&P500: How geometric average return is impossible](./notebooks/Notebook-11%20-%20Ergodicity%20and%20S%26P500.ipynb)
 
 ### Functions
-Right now there's just `mad()` a function to calculate mean absolute deviation.
+* `fattails.metrics.mad()`: Calculates mean absolute deviation.
 
 Example:
 ```
@@ -26,11 +24,13 @@ $ python
 0.6666666666666666
 ```
 
+### Derivations
+* [How much data do I need?](/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
+
 # External Resources
-E-Book PDFs
+E-Book:
 * [Vol 1 of the Technical Incerto](https://researchers.one/articles/20.01.00018)
     * [Errata](https://www.fooledbyrandomness.com/Errata2020FirstEdition.pdf)
 
-Code Repositories:
-* [`ggtails`](https://github.com/David-Salazar/ggtails) for plots using R
-* [StatisticalConsequencesOfFatTails](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails) collaborative Python code and commentaries.
+More Links:
+* [StatisticalConsequencesOfFatTails](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails) collaborative links to code and commentaries.
