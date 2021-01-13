@@ -34,3 +34,4 @@ E-Book:
 
 More Links:
 * [StatisticalConsequencesOfFatTails](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails) collaborative links to code and commentaries.
+* [Incerto Reading Club](http://www.techincertoreadingclub.com/)
