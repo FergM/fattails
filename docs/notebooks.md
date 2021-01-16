@@ -20,3 +20,6 @@ Below is an index of the [notebooks/](../notebooks) folder.
 
 ##### Chapter 7:
 * [Uniform is Gaussian under __Central Limit Theorem__](../notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
+
+##### Chapter 8:
+* [Beware, the __Lognormal__ is fat and thin](../notebooks/NB-23%20-%20Lognormal%20can%20be%20both%20Thin%20or%20Fat.ipynb)
