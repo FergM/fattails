@@ -4,7 +4,7 @@ Fat Tailed Statistics package and Jupyter notebooks. Inspired by Nassim Taleb's 
 ## Content
 
 ### Notebooks
-You can find a list of notebooks in [docs/notebooks.md](./docs/notebooks.md).
+You can find a list of notebooks in [notebooks/README.md](./notebooks/).
 
 My favourite notebooks so far:
 * [Central Limit Theorem: How the sum of Uniform values is Gaussian](./notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
