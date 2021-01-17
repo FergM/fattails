@@ -1,6 +1,12 @@
 # Fat Tails
 Fat Tailed Statistics package and Jupyter notebooks. Inspired by Nassim Taleb's Technical Incerto.
 
+<div>
+  <a href="https://pypi.org/project/fattails">
+      <img src="https://badge.fury.io/py/fattails.svg" alt="package version"/>
+  </a>
+</div>
+
 ## Content
 
 ### Notebooks
