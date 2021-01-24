@@ -12,6 +12,7 @@ Below is a list of the main notebooks.
 
 ##### Chapter 5:
 * [Use __log plots__ to explore the tail](../notebooks/NB-14%20-%20LogLog%20Exceedance%20Flights.ipynb)
+* [The __Exponential__ Distribution](../notebooks/NB-24%20-%20Exponential%20Distribution.ipynb)
 
 ##### Chapter 6:
 * [Correlation makes __Ellipticality__  look oval.](../notebooks/NB-19%20-%20Ellipticality.ipynb)
