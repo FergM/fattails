@@ -1,5 +1,5 @@
 # Fat Tails
-Fat Tailed Statistics package and Jupyter notebooks. Inspired by Nassim Taleb's Technical Incerto.
+Python package and Jupyter notebooks for fat-tailed statistics. Inspired by Nassim Taleb's Technical Incerto.
 
 <div>
   <a href="https://pypi.org/project/fattails">
@@ -10,7 +10,7 @@ Fat Tailed Statistics package and Jupyter notebooks. Inspired by Nassim Taleb's 
 ## Content
 
 ### Notebooks
-You can find a list of notebooks in [notebooks/README.md](./notebooks/).
+See the [notebooks/README.md](./notebooks/) for more detail.
 
 My favourite notebooks so far:
 * [Central Limit Theorem: How the sum of Uniform values is Gaussian](./notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
@@ -34,10 +34,11 @@ $ python
 * [How much data do I need?](/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
 
 # External Resources
-E-Book:
-* [Vol 1 of the Technical Incerto](https://researchers.one/articles/20.01.00018)
-    * [Errata](https://www.fooledbyrandomness.com/Errata2020FirstEdition.pdf)
+Technical Incerto Book One:
+* [PDF on researchers.one](https://researchers.one/articles/20.01.00018)
+* [PDF on arxiv.org](https://arxiv.org/abs/2001.10488)
+* [Errata](https://www.fooledbyrandomness.com/Errata2020FirstEdition.pdf)
 
 More Links:
-* [StatisticalConsequencesOfFatTails](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails) collaborative links to code and commentaries.
-* [Incerto Reading Club](http://www.techincertoreadingclub.com/)
+* Incerto Reading Club: [Website](http://www.techincertoreadingclub.com/), [GitHub](https://github.com/Technical-Incerto-Reading-Club/code-examples)
+* [`StatisticalConsequencesOfFatTails`](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails): Code and Links collected by [Marcos Carreira](https://github.com/MarcosCarreira)
