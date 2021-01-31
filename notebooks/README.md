@@ -11,6 +11,7 @@ Below is a list of the main notebooks.
 * [__Fatten the Gaussian__ with mixed variance](../notebooks/NB-17%20-%20Fattened%20Normal.ipynb)
 
 ##### Chapter 5:
+* [Gamestop returns fit a __Power Law__ tail](../notebooks//NB-25%20-%20Survival%20Plot%20-%20Gamestop.ipynb)
 * [Use __log plots__ to explore the tail](../notebooks/NB-14%20-%20LogLog%20Exceedance%20Flights.ipynb)
 * [The __Exponential__ Distribution](../notebooks/NB-24%20-%20Exponential%20Distribution.ipynb)
 
