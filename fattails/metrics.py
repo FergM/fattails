@@ -1,3 +1,4 @@
+from copy import copy
 import numpy as np
 import pandas as pd
 
@@ -42,30 +43,45 @@ def get_survival_probability(arr):
     -------
     survival_probability_sr : Pandas Series
     """
+    #---------------------------------------------------
+    # PREPARE
+    ## Sort values from low to high. Keep track of original
+    ## index and order.
 
-    sr = pd.Series(arr, name='input_data') # Convert input to pandas series
-    sr = sr.sort_values()                  # Sort from low to high
+    arr = copy(arr)     # Copy to avoid accidental mutation
+    sr = pd.Series(arr) # Ensure we have a pandas series
 
-    # Reset index
-    df = sr.reset_index()   # Keeps the old index
-    df = df.rename(columns={'index':'input_index'})
+    ## Keep a copy of the original index
+    input_index = sr.index.copy()
+
+    ## Create index of input order
+    df = sr.reset_index(name='input_values') # Keeps the input index as a column
+    df.index.name = 'input_order' # Name the new index
+
+    ## Sort from low to high and reindex
+    df = df.sort_values(by='input_values') # sort from low to high
+    df = df.reset_index()
+    df.index.name = 'sorted_order' # Name the new index
+
+    #---------------------------------------------------
+    # CALCULATE
 
     # Label relative positions
     gap_count = len(sr) + 1           # Think of the Posts and Fences analogy
-    df['left_gap_count'] = df.index+1                     # Count values <= x
+    df['left_gap_count'] = df.index + 1                   # Count values <= x
     df['right_gap_count'] = gap_count - df.left_gap_count # Count values >= x
 
     # Get survival Probability
     df['survival_probability'] = df.right_gap_count / gap_count
 
-    #===================================================
-    #Format the Output
+    #---------------------------------------------------
+    # FORMAT THE OUTPUT
 
-    #Reset original Order
-    df = df.sort_values(by='input_index')
+    #Reset Input Order and Index
+    df = df.sort_values(by='input_order') # sort from low to high
+    df.index = input_index
 
     #Extract the output series
     survival_probability_sr = df.survival_probability
-    survival_probability_sr.reindex(df.input_index)
 
     return survival_probability_sr
