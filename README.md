@@ -15,19 +15,29 @@ See the [notebooks/README.md](./notebooks/) for more detail.
 My favourite notebooks so far:
 * [Central Limit Theorem: How the sum of Uniform values is Gaussian](./notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
 * [S&P500: How geometric average return is impossible](./notebooks/Notebook-11%20-%20Ergodicity%20and%20S%26P500.ipynb)
+* [GameStop: January 2021 was not an outlier if you assume Power Law tails.](./notebooks/NB-25%20-%20Survival%20Plot%20-%20Gamestop.ipynb)
 
 ### Functions
 * `fattails.metrics.mad()`: Calculates mean absolute deviation.
+* `fattails.metrics.get_survival_probability()`: Calculate survival probabilities for a given dataset.
 
 Example:
 ```
 $ pip install fattails
 $ python
 
->>> import fattails
->>> from fattails.metrics import mad
->>> mad([1,2,3]) # Calculate Mean Absolute Deviation of [1,2,3]
+>>> import fattails.metrics as fattails
+>>>
+>>>
+>>> fattails.mad([1,2,3]) # Calculate Mean Absolute Deviation of [1,2,3]
 0.6666666666666666
+>>>
+>>>
+>>> fattails.get_survival_probability([1,2,3]) # Get survival probability for each value in your data
+0    0.75
+1    0.50
+2    0.25
+Name: survival_probability, dtype: float64
 ```
 
 ### Derivations
