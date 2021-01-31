@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from pandas.testing import assert_series_equal
 import pytest
 
 
@@ -33,9 +34,25 @@ class TestMad:
 ])
 class TestGetSurvivalProbability:
 
-    def test_returns_expected_results(self, description, input_data, expected_output):
+    def test_accepts_list_input(self, description, input_data, expected_output):
+        """List input data should be accepted even though output is always a pandas series."""
 
         output = get_survival_probability(input_data)
 
         assert output.name == 'survival_probability'
         assert output.to_list() ==  expected_output
+
+    def test_accepts_series_input(self, description, input_data, expected_output):
+
+        # Setup
+        index = pd.date_range('2000-01-01', periods=len(input_data))
+        # Input series
+        input_name = 'name_placeholder'
+        input_data = pd.Series(input_data, index, name=input_name)
+        # Expected output
+        expected_name = 'survival_probability'
+        expected = pd.Series(expected_output, index, name=expected_name)
+
+        output = get_survival_probability(input_data)
+
+        assert_series_equal(output, expected)
