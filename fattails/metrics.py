@@ -5,7 +5,8 @@ import pandas as pd
 def mad(x):
     """Calculate Mean Absolute Deviation
     
-    Not to be confused with commonly found 'Median' Absolute Deviation.
+    The average deviation from sample mean.
+    Not to be confused with 'Median' Absolute Deviation.
     
     Parameters
     ----------
