@@ -1,5 +1,5 @@
 # Package
-pandas  # numpy is also required but this comes with pandas
+pandas>=1.2.0  # 1.2.0 required to make the scatter plot xlabel work
 
 # Notebooks
 matplotlib

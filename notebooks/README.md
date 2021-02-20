@@ -24,3 +24,6 @@ Below is a list of the main notebooks.
 
 ##### Chapter 8:
 * [Beware, the __Lognormal__ is fat and thin](../notebooks/NB-23%20-%20Lognormal%20can%20be%20both%20Thin%20or%20Fat.ipynb)
+
+##### Chapter 9:
+* [The __Frechet Distribution__ preserves the tail exponent](../notebooks/NB26%20-%20Frechet%20Distribution.ipynb)

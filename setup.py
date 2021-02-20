@@ -18,7 +18,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'pandas>=1.1.4',
+        'pandas>=1.2.0',
         'matplotlib>=3.3.3'
     ],
     python_requires='>=3.8.5',
