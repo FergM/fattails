@@ -1,0 +1,14 @@
+# Package
+pandas  # numpy is also required but this comes with pandas
+
+# Notebooks
+matplotlib
+scipy
+sympy
+
+# Jupyter Installation
+jupyter
+
+# Development
+flake8
+pytest
