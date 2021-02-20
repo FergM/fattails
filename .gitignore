@@ -1,9 +1,15 @@
 #====================================================
-## MY ADDITIONS:
+# MY ADDITIONS:
 data/
 
+# Distributions for PyPi upload
+dist*/
+
+# Environments
+env*/
+
 #====================================================
-## Git Python Gitignore Template:
+# GITHUB DEFAULTS:
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
