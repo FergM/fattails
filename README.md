@@ -18,7 +18,9 @@ My favourite notebooks so far:
 * [GameStop: January 2021 was not an outlier if you assume Power Law tails.](./notebooks/NB-25%20-%20Survival%20Plot%20-%20Gamestop.ipynb)
 
 ### Functions
-* `fattails.metrics.mad()`: Calculates mean absolute deviation.
+Quick Access:
+* `fattails.mad()`: Calculates mean absolute deviation.
+Other:
 * `fattails.metrics.get_survival_probability()`: Calculate survival probabilities for a given dataset.
 
 Example:
@@ -26,14 +28,14 @@ Example:
 $ pip install fattails
 $ python
 
->>> import fattails.metrics as fattails
+>>> import fattails
 >>>
 >>>
 >>> fattails.mad([1,2,3]) # Calculate Mean Absolute Deviation of [1,2,3]
 0.6666666666666666
 >>>
 >>>
->>> fattails.get_survival_probability([1,2,3]) # Get survival probability for each value in your data
+>>> fattails.metrics.get_survival_probability([1,2,3]) # Get survival probability for each value in your data
 0    0.75
 1    0.50
 2    0.25
