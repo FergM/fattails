@@ -27,3 +27,6 @@ Below is a list of the main notebooks.
 
 ##### Chapter 9:
 * [The __Frechet Distribution__ preserves the tail exponent](../notebooks/NB26%20-%20Frechet%20Distribution.ipynb)
+
+##### Chapter 10:
+* [The __MS Plot__: Percentage impact of the sample max](../notebooks/NB27%20-%20Max%20over%20Sum%20Plot.ipynb)
