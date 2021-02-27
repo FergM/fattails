@@ -21,5 +21,5 @@ setuptools.setup(
         'pandas>=1.2.0',
         'matplotlib>=3.3.3'
     ],
-    python_requires='>=3.8.5',
+    python_requires='>=3.7',
 )
