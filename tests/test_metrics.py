@@ -61,16 +61,16 @@ class TestGetSurvivalProbability:
         assert_series_equal(output, expected)
 
 
-@pytest.mark.parametrize("description, input_data, expected_output", [
-    ("simple_values",  [1, 2, 3], {'moment_1': [1, 2, 3],
-                                   'moment_2': [1, 4, 9],
-                                   'moment_3': [1, 8, 27]}),
-    ("negative_values",  [-1, 2, -3], {'moment_1': [1, 2, 3],
-                                       'moment_2': [1, 4, 9],
-                                       'moment_3': [1, 8, 27]}),
-])
 class TestCalculateMoments:
 
+    @pytest.mark.parametrize("description, input_data, expected_output", [
+        ("simple_values",  [1, 2, 3], {'moment_1': [1, 2, 3],
+                                       'moment_2': [1, 4, 9],
+                                       'moment_3': [1, 8, 27]}),
+        ("negative_values",  [-1, 2, -3], {'moment_1': [1, 2, 3],
+                                           'moment_2': [1, 4, 9],
+                                           'moment_3': [1, 8, 27]}),
+    ])
     def test_gives_expected_output(self, description,
                                    input_data, expected_output):
 
@@ -88,5 +88,20 @@ class TestCalculateMoments:
 
 class TestMaxOverSum:
 
-    def abc():
-        pass
+    @pytest.mark.parametrize("description, input_data, \
+                              expected_output, reset_index", [
+        ("simple_values",  [1, 2, 3], pd.Series([1, 2/3, 3/6]), False),
+        ("reset_index",  [1, 2, 3], pd.Series([1, 2/3, 3/6]), True)
+    ])
+    def test_gives_expected_output(self, description,
+                                   input_data, expected_output, reset_index):
+        expected_output = pd.Series(expected_output)
+        if reset_index:
+            expected_output.index += 1
+            expected_output.index.rename('cumulative_sample_size',
+                                         inplace=True)
+
+        max_over_sum = metrics.max_over_sum(input_data,
+                                            reset_index=reset_index)
+
+        assert_series_equal(max_over_sum, expected_output)
