@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="fattails", # Replace with your own username
-    version="0.0.3",
+    version="0.0.4",
     author="FergM",
     description="A package for fat-tailed statistics",
     long_description=long_description,
@@ -21,5 +21,5 @@ setuptools.setup(
         'pandas>=1.2.0',
         'matplotlib>=3.3.3'
     ],
-    python_requires='>=3.8.5',
+    python_requires='>=3.7',
 )

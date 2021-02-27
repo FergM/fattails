@@ -1,27 +1,28 @@
 # Fat Tails
 Python package and Jupyter notebooks for fat-tailed statistics. Inspired by Nassim Taleb's Technical Incerto.
 
-<div>
-  <a href="https://pypi.org/project/fattails">
-      <img src="https://badge.fury.io/py/fattails.svg" alt="package version"/>
-  </a>
-</div>
+[![PyPI](https://img.shields.io/pypi/v/fattails)](https://pypi.org/project/fattails/)
+[![PyPI - License](https://img.shields.io/pypi/l/fattails)](https://github.com/FergM/fattails/blob/main/LICENSE)
 
 ## Content
 
 ### Notebooks
-See the [notebooks/README.md](./notebooks/) for more detail.
+See the [notebooks/README.md](https://github.com/FergM/fattails/blob/main/notebooks/README.md) for more detail.
 
 My favourite notebooks so far:
-* [Central Limit Theorem: How the sum of Uniform values is Gaussian](./notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
-* [S&P500: How geometric average return is impossible](./notebooks/Notebook-11%20-%20Ergodicity%20and%20S%26P500.ipynb)
-* [GameStop: January 2021 was not an outlier if you assume Power Law tails.](./notebooks/NB-25%20-%20Survival%20Plot%20-%20Gamestop.ipynb)
+* [Central Limit Theorem: How the sum of Uniform values is Gaussian](https://github.com/FergM/fattails/blob/main/notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
+* [S&P500: How geometric average return is impossible](https://github.com/FergM/fattails/blob/main/notebooks/Notebook-11%20-%20Ergodicity%20and%20S%26P500.ipynb)
+* [GameStop: January 2021 was not an outlier if you assume Power Law tails.](https://github.com/FergM/fattails/blob/main/notebooks/NB-25%20-%20Survival%20Plot%20-%20Gamestop.ipynb)
 
 ### Functions
 Quick Access:
 * `fattails.mad()`: Calculates mean absolute deviation.
+* `fattails.plot_MS_moments()`: Plots the cumulative max/sum ratio of moments 1 to 4.
+
 Other:
 * `fattails.metrics.get_survival_probability()`: Calculate survival probabilities for a given dataset.
+* `fattails.metrics.calculate_moments()`: Generate dataframe with the chosen moments for each datapoint
+* `fattails.metrics.max_over_sum()`: Calculate the cumulative max/sum ratio
 
 Example:
 ```
@@ -43,13 +44,19 @@ Name: survival_probability, dtype: float64
 ```
 
 ### Derivations
-* [How much data do I need?](/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
+* [How much data do I need?](https://github.com/FergM/fattails/blob/main/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
+
+## Contact
+Jump straight to [discussions](https://github.com/FergM/fattails/discussions) or check out the [contributing guidelines](./docs/CONTRIBUTING.md). Feedback and suggestions are really appreciated!
+
+### Contributors
+Special thanks to:
+* Daniel Reti: [github.com/drettt](https://github.com/drettt)
 
 # External Resources
 Technical Incerto Book One:
-* [PDF on researchers.one](https://researchers.one/articles/20.01.00018)
-* [PDF on arxiv.org](https://arxiv.org/abs/2001.10488)
-* [Errata](https://www.fooledbyrandomness.com/Errata2020FirstEdition.pdf)
+* Free PDF: [researchers.one](https://researchers.one/articles/20.01.00018), [arxiv.org](https://arxiv.org/abs/2001.10488)
+* Errata: [fooledbyrandomness.com](https://www.fooledbyrandomness.com/Errata2020FirstEdition.pdf)
 
 More Links:
 * Incerto Reading Club: [Website](http://www.techincertoreadingclub.com/), [GitHub](https://github.com/Technical-Incerto-Reading-Club/code-examples)
