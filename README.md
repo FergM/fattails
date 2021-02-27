@@ -20,9 +20,12 @@ My favourite notebooks so far:
 ### Functions
 Quick Access:
 * `fattails.mad()`: Calculates mean absolute deviation.
+* `fattails.plot_MS_moments()`: Plots the cumulative max/sum ratio of moments 1 to 4.
 
 Other:
 * `fattails.metrics.get_survival_probability()`: Calculate survival probabilities for a given dataset.
+* `fattails.metrics.calculate_moments()`: Generate dataframe with the chosen moments for each datapoint
+* `fattails.metrics.max_over_sum()`: Calculate the cumulative max/sum ratio
 
 Example:
 ```
