@@ -1,50 +1,7 @@
 from copy import copy
 
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-
-
-def max_to_sum_plot(sample):
-    """
-    Parameters: 1D numpy array
-   
-    ----------------
-    
-    Output: Matplotlib object
-    2x2 Maximum to Sum plot of the 4 moments: Mean, Variance, Skewness and Kurtosis
-    
-    -----------------
-    """
-    #error handling
-    if len(sample)<10:
-        raise Exception("Not enough data")
-        
-    if np.array(sample).shape != (len(sample),):
-        raise Exception("Sample not 1D")
-    
-    R = np.zeros((4,len(sample)))
-    for p in range(0,4):
-        #1-4 moments
-        for n in range(2,len(sample)):
-            #loop through the sample for each p
-            M = np.max(sample[:n]**(p+1)) # index starts from 0
-            S = np.sum(sample[:n]**(p+1))
-            R[p,n] = M/S
-    #make plots
-    fig,ax = plt.subplots(2,2)
-    ax[0,0].plot(R[0,:])
-    ax[0,0].set_title("1st Moment")
-    ax[0,1].plot(R[1,:])
-    ax[0,1].set_title("2nd Moment")
-    ax[1,0].plot(R[2,:])
-    ax[1,0].set_title("3rd Moment")
-    ax[1,1].plot(R[3,:])
-    ax[1,1].set_title("4th Moment")
-    for ax in ax.flat:
-        ax.set(xlabel='n', ylabel='max-to-sum')
-        ax.label_outer()
-    return ax
 
 
 def mad(x):
