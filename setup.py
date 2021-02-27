@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="fattails", # Replace with your own username
-    version="0.0.3",
+    version="0.0.4",
     author="FergM",
     description="A package for fat-tailed statistics",
     long_description=long_description,
