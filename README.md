@@ -1,8 +1,8 @@
 # Fat Tails
 Python package and Jupyter notebooks for fat-tailed statistics. Inspired by Nassim Taleb's Technical Incerto.
 
-![PyPI](https://img.shields.io/pypi/v/fattails)
-![PyPI - License](https://img.shields.io/pypi/l/fattails)
+[![PyPI](https://img.shields.io/pypi/v/fattails)](https://pypi.org/project/fattails/)
+[![PyPI - License](https://img.shields.io/pypi/l/fattails)](https://github.com/FergM/fattails/blob/main/LICENSE)
 
 ## Content
 

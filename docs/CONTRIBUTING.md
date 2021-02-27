@@ -1,5 +1,5 @@
 # How to contribute to `fattails`
-![PyPI - License](https://img.shields.io/pypi/l/fattails)
+[![PyPI - License](https://img.shields.io/pypi/l/fattails)](https://github.com/FergM/fattails/blob/main/LICENSE)
 
 ### Where should I start?
 * Start a conversation on the [discussions page](https://github.com/FergM/fattails/discussions)
