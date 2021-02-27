@@ -10,12 +10,12 @@ Python package and Jupyter notebooks for fat-tailed statistics. Inspired by Nass
 ## Content
 
 ### Notebooks
-See the [notebooks/README.md](./notebooks/) for more detail.
+See the [notebooks/README.md](https://github.com/FergM/fattails/blob/main/notebooks/README.md) for more detail.
 
 My favourite notebooks so far:
-* [Central Limit Theorem: How the sum of Uniform values is Gaussian](./notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
-* [S&P500: How geometric average return is impossible](./notebooks/Notebook-11%20-%20Ergodicity%20and%20S%26P500.ipynb)
-* [GameStop: January 2021 was not an outlier if you assume Power Law tails.](./notebooks/NB-25%20-%20Survival%20Plot%20-%20Gamestop.ipynb)
+* [Central Limit Theorem: How the sum of Uniform values is Gaussian](https://github.com/FergM/fattails/blob/main/notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
+* [S&P500: How geometric average return is impossible](https://github.com/FergM/fattails/blob/main/notebooks/Notebook-11%20-%20Ergodicity%20and%20S%26P500.ipynb)
+* [GameStop: January 2021 was not an outlier if you assume Power Law tails.](https://github.com/FergM/fattails/blob/main/notebooks/NB-25%20-%20Survival%20Plot%20-%20Gamestop.ipynb)
 
 ### Functions
 Quick Access:
@@ -43,7 +43,7 @@ Name: survival_probability, dtype: float64
 ```
 
 ### Derivations
-* [How much data do I need?](/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
+* [How much data do I need?](https://github.com/FergM/fattails/blob/main/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
 
 # External Resources
 Technical Incerto Book One:
