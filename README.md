@@ -47,7 +47,7 @@ Name: survival_probability, dtype: float64
 * [How much data do I need?](https://github.com/FergM/fattails/blob/main/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
 
 ## Contact
-Jump straight to [discussions](https://github.com/FergM/fattails/discussions) or check out the [contributing guidelines](./docs/CONTRIBUTING.md). Feedback and suggestions are really appreciated!
+Jump straight to [discussions](https://github.com/FergM/fattails/discussions) or check out the [contributing guidelines](https://github.com/FergM/fattails/blob/main/docs/CONTRIBUTING.md). Feedback and suggestions are really appreciated!
 
 ### Contributors
 Special thanks to:
