@@ -20,6 +20,7 @@ My favourite notebooks so far:
 ### Functions
 Quick Access:
 * `fattails.mad()`: Calculates mean absolute deviation.
+
 Other:
 * `fattails.metrics.get_survival_probability()`: Calculate survival probabilities for a given dataset.
 
