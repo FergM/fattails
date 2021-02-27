@@ -1,11 +1,8 @@
 # Fat Tails
 Python package and Jupyter notebooks for fat-tailed statistics. Inspired by Nassim Taleb's Technical Incerto.
 
-<div>
-  <a href="https://pypi.org/project/fattails">
-      <img src="https://badge.fury.io/py/fattails.svg" alt="package version"/>
-  </a>
-</div>
+![PyPI](https://img.shields.io/pypi/v/fattails)
+![PyPI - License](https://img.shields.io/pypi/l/fattails)
 
 ## Content
 
@@ -49,11 +46,17 @@ Name: survival_probability, dtype: float64
 ### Derivations
 * [How much data do I need?](https://github.com/FergM/fattails/blob/main/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
 
+## Contact
+Jump straight to [discussions](https://github.com/FergM/fattails/discussions) or check out the [contributing guidelines](./docs/CONTRIBUTING.md). Feedback and suggestions are really appreciated!
+
+### Contributors
+Special thanks to:
+* Daniel Reti: [github.com/drettt](https://github.com/drettt)
+
 # External Resources
 Technical Incerto Book One:
-* [PDF on researchers.one](https://researchers.one/articles/20.01.00018)
-* [PDF on arxiv.org](https://arxiv.org/abs/2001.10488)
-* [Errata](https://www.fooledbyrandomness.com/Errata2020FirstEdition.pdf)
+* Free PDF: [researchers.one](https://researchers.one/articles/20.01.00018), [arxiv.org](https://arxiv.org/abs/2001.10488)
+* Errata: [fooledbyrandomness.com](https://www.fooledbyrandomness.com/Errata2020FirstEdition.pdf)
 
 More Links:
 * Incerto Reading Club: [Website](http://www.techincertoreadingclub.com/), [GitHub](https://github.com/Technical-Incerto-Reading-Club/code-examples)
