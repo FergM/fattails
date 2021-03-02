@@ -16,13 +16,13 @@ My favourite notebooks so far:
 
 ### Functions
 Quick Access:
-* `fattails.mad()`: Calculates mean absolute deviation.
-* `fattails.plot_MS_moments()`: Plots the cumulative max/sum ratio of moments 1 to 4.
+* [`fattails.mad()`](https://github.com/FergM/fattails/blob/main/fattails/metrics.py#L7): Calculates mean absolute deviation.
+* [`fattails.plot_MS_moments()`](https://github.com/FergM/fattails/blob/main/fattails/express.py#L7): Plots the cumulative max/sum ratio of moments 1 to 4.
 
 Other:
-* `fattails.metrics.get_survival_probability()`: Calculate survival probabilities for a given dataset.
-* `fattails.metrics.calculate_moments()`: Generate dataframe with the chosen moments for each datapoint
-* `fattails.metrics.max_over_sum()`: Calculate the cumulative max/sum ratio
+* [`fattails.metrics.get_survival_probability()`](https://github.com/FergM/fattails/blob/main/fattails/metrics.py#L35): Calculate survival probabilities for a given dataset.
+* [`fattails.metrics.calculate_moments()`](https://github.com/FergM/fattails/blob/main/fattails/metrics.py#L94): Generate dataframe with the chosen moments for each datapoint
+* [`fattails.metrics.max_over_sum()`](https://github.com/FergM/fattails/blob/main/fattails/metrics.py#L132): Calculate the cumulative max/sum ratio
 
 Example:
 ```
