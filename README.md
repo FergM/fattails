@@ -24,27 +24,35 @@ Other:
 * [`fattails.metrics.calculate_moments()`](https://github.com/FergM/fattails/blob/main/fattails/metrics.py#L94): Generate dataframe with the chosen moments for each datapoint
 * [`fattails.metrics.max_over_sum()`](https://github.com/FergM/fattails/blob/main/fattails/metrics.py#L132): Calculate the cumulative max/sum ratio
 
-Example:
+### Derivations
+* [How much data do I need?](https://github.com/FergM/fattails/blob/main/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
+
+## Installation
+### Notebooks
+To run the notebooks yourself:
+1. Clone or download the repository; or copy a notebooks's raw text to a file
+2. Use [Jupyter](https://jupyter.org/) to open
+
+### Functions
 ```
 $ pip install fattails
-$ python
+```
 
->>> import fattails
->>>
->>>
+## Examples
+Calculate Mean Absolute Deviation:
+```
 >>> fattails.mad([1,2,3]) # Calculate Mean Absolute Deviation of [1,2,3]
 0.6666666666666666
->>>
->>>
+```
+
+Calculate Survival Probability:
+```
 >>> fattails.metrics.get_survival_probability([1,2,3]) # Get survival probability for each value in your data
 0    0.75
 1    0.50
 2    0.25
 Name: survival_probability, dtype: float64
 ```
-
-### Derivations
-* [How much data do I need?](https://github.com/FergM/fattails/blob/main/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
 
 ## Contact
 Jump straight to [discussions](https://github.com/FergM/fattails/discussions) or check out the [contributing guidelines](https://github.com/FergM/fattails/blob/main/docs/CONTRIBUTING.md). Feedback and suggestions are really appreciated!

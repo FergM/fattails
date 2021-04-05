@@ -32,7 +32,7 @@ def mad(x):
     return mad
 
 
-def get_survival_probability(arr):
+def get_survival_probability(arr, as_DataFrame=False):
     """Calculate sample probability of X >= x, for each value in `arr`.
 
     Duplicate values are treated as ascending values based on
@@ -42,10 +42,13 @@ def get_survival_probability(arr):
     ----------
     arr : array_like
         Numeric values on the real number line
+    as_DataFrame : bool
+        If True, returns dataframe with input arr and survival probability as columns
 
     Returns
     -------
-    survival_probability_sr : Pandas Series
+    survival_info : Pandas Series or DataFrame
+        Type depends on `as_DataFrame` input parameter.
     """
     # ---------------------------------------------------
     # PREPARE
@@ -85,10 +88,13 @@ def get_survival_probability(arr):
     df = df.sort_values(by='input_order')  # sort from low to high
     df.index = input_index
 
-    # Extract the output series
-    survival_probability_sr = df.survival_probability
+    if as_DataFrame:
+        survival_info = df.loc[:,['input_values', 'survival_probability']]
+    else:
+        # Extract the output series
+        survival_info = df.survival_probability
 
-    return survival_probability_sr
+    return survival_info
 
 
 def calculate_moments(data, moments=[1, 2, 3, 4], absolute_values=True):
