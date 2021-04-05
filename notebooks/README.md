@@ -9,6 +9,7 @@ Below is a list of the main notebooks.
 
 ##### Chapter 4:
 * [__Fatten the Gaussian__ with mixed variance](../notebooks/NB-17%20-%20Fattened%20Normal.ipynb)
+* [__Mean Absolute Deviation__ is MAD, but using Standard Deviation is mad!](../notebooks/NB29%20-%20Std%20vs%20MAD%20Efficiency.ipynb)
 
 ##### Chapter 5:
 * [Gamestop returns fit a __Power Law__ tail](../notebooks//NB-25%20-%20Survival%20Plot%20-%20Gamestop.ipynb)
