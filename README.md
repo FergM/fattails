@@ -13,6 +13,8 @@ My favourite notebooks so far:
 * [Central Limit Theorem: How the sum of Uniform values is Gaussian](https://github.com/FergM/fattails/blob/main/notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
 * [S&P500: How geometric average return is impossible](https://github.com/FergM/fattails/blob/main/notebooks/Notebook-11%20-%20Ergodicity%20and%20S%26P500.ipynb)
 * [GameStop: January 2021 was not an outlier if you assume Power Law tails.](https://github.com/FergM/fattails/blob/main/notebooks/NB-25%20-%20Survival%20Plot%20-%20Gamestop.ipynb)
+* [Tail Alpha: How to estimate the mean of a power law](https://github.com/FergM/fattails/blob/main/notebooks/NB34%20-%20Tail%20Alpha%20Distribution.ipynb)
+
 
 ### Functions
 Quick Access:
