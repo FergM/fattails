@@ -24,6 +24,7 @@ Below is a list of the main notebooks.
 * [Uniform is Gaussian under __Central Limit Theorem__](../notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
 
 ##### Chapter 8:
+* [Extreme Value Theory: __Distribution of the Sample Max__](../notebooks/NB35%20-%20Distribution%20of%20the%20Sample%20Max.ipynb)
 * [Beware, the __Lognormal__ is fat and thin](../notebooks/NB-23%20-%20Lognormal%20can%20be%20both%20Thin%20or%20Fat.ipynb)
 
 ##### Chapter 9:
