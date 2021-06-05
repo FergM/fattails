@@ -1,12 +1,12 @@
 # Fat Tails
-Python package and Jupyter notebooks for fat-tailed statistics. Inspired by Nassim Taleb's Technical Incerto.
+Notes and Code for fat-tailed statistics. Inspired by Nassim Taleb's Technical Incerto.
 
 [![PyPI](https://img.shields.io/pypi/v/fattails)](https://pypi.org/project/fattails/)
 [![PyPI - License](https://img.shields.io/pypi/l/fattails)](https://github.com/FergM/fattails/blob/main/LICENSE)
 
 ## Content
 
-### Notebooks
+### 1. Notebooks
 See the [notebooks/README.md](https://github.com/FergM/fattails/blob/main/notebooks/README.md) for more detail.
 
 My favourite notebooks so far:
@@ -16,7 +16,7 @@ My favourite notebooks so far:
 * [Tail Alpha: How to estimate the mean of a power law](https://github.com/FergM/fattails/blob/main/notebooks/NB34%20-%20Tail%20Alpha%20Distribution.ipynb)
 
 
-### Functions
+### 2. Functions
 Quick Access:
 * [`fattails.mad()`](https://github.com/FergM/fattails/blob/main/fattails/metrics.py#L7): Calculates mean absolute deviation.
 * [`fattails.plot_MS_moments()`](https://github.com/FergM/fattails/blob/main/fattails/express.py#L7): Plots the cumulative max/sum ratio of moments 1 to 4.
@@ -45,7 +45,7 @@ $ python
 Name: survival_probability, dtype: float64
 ```
 
-### Derivations
+### 3. Derivations
 * [How much data do I need?](https://github.com/FergM/fattails/blob/main/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
 
 ## Contact
