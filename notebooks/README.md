@@ -20,6 +20,8 @@ Below is a list of the main notebooks.
 * [Correlation makes __Ellipticality__  look oval.](../notebooks/NB-19%20-%20Ellipticality.ipynb)
 * [A single point can blow up your __regression__](../notebooks/NB-16%20-%20Fat%20Tail%20Regression.ipynb)
 
+### II The Law of Medium Numbers
+
 ##### Chapter 7:
 * [Uniform is Gaussian under __Central Limit Theorem__](../notebooks/NB-22%20-%20Visual%20Central%20Limit%20Theorem.ipynb)
 
@@ -35,3 +37,8 @@ Below is a list of the main notebooks.
 
 ##### Chapter 10:
 * [The __MS Plot__: Percentage impact of the sample max](../notebooks/NB27%20-%20Max%20over%20Sum%20Plot.ipynb)
+
+### III Predictions, Forecasting, and Uncertainty
+
+##### Chapter 11:
+* [Symmetric __Beta Distribution__: The probability distribution of probability](../notebooks/NB36%20-%20Symmetric%20Beta%20Distribution.ipynb)
