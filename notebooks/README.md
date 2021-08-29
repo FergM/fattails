@@ -43,3 +43,6 @@ Below is a list of the main notebooks.
 
 ##### Chapter 11:
 * [Symmetric __Beta Distribution__: The probability distribution of probability](../notebooks/NB36%20-%20Symmetric%20Beta%20Distribution.ipynb)
+
+##### Chapter 12:
+* [Binary Forecasts: An Arbitrage Approach](../notebooks/NB38%20-%20Election%20Predictions.ipynb)
