@@ -46,3 +46,4 @@ Below is a list of the main notebooks.
 
 ##### Chapter 12:
 * [__Binary Predictions__: With arbitrage price constraints](../notebooks/NB38%20-%20Election%20Predictions.ipynb)
+* [__Signal vs. Noise__: Make sure you're confident before making extreme predictions.](../notebooks/NB39%20-%20Election%20Predictions%20-%20Brier%20Information%20Content.ipynb)
