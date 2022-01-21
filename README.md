@@ -1,12 +1,14 @@
 # Fat Tails
 Notes and Code for fat-tailed statistics. Inspired by Nassim Taleb's Technical Incerto.
 
-[![PyPI](https://img.shields.io/pypi/v/fattails)](https://pypi.org/project/fattails/)
 [![PyPI - License](https://img.shields.io/pypi/l/fattails)](https://github.com/FergM/fattails/blob/main/LICENSE)
 
-## Content
+# Table of Contents
+* [My Notebooks](#notebooks)
+* [External Resources](#external-resources)
+* [Other Notes](#other-notes)
 
-### 1. Notebooks
+### Notebooks
 See the [notebooks/README.md](https://github.com/FergM/fattails/blob/main/notebooks/README.md) for more detail.
 
 My favourite notebooks so far:
@@ -15,8 +17,28 @@ My favourite notebooks so far:
 * [GameStop: January 2021 was not an outlier if you assume Power Law tails.](https://github.com/FergM/fattails/blob/main/notebooks/NB-25%20-%20Survival%20Plot%20-%20Gamestop.ipynb)
 * [Tail Alpha: How to estimate the mean of a power law](https://github.com/FergM/fattails/blob/main/notebooks/NB34%20-%20Tail%20Alpha%20Distribution.ipynb)
 
+### External Resources
+Technical Incerto Book One:
+* Free PDF: [researchers.one](https://researchers.one/articles/20.01.00018), [arxiv.org](https://arxiv.org/abs/2001.10488)
+* Errata: [fooledbyrandomness.com](https://www.fooledbyrandomness.com/Errata2020FirstEdition.pdf)
 
-### 2. Functions
+More Links:
+* Incerto **Reading Club**: [Website](http://www.techincertoreadingclub.com/)
+* [`StatisticalConsequencesOfFatTails`](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails): Code and Links collected by [Marcos Carreira](https://github.com/MarcosCarreira)
+* Anthony Voto: Diagnosing the SP500 [Twitter thread](https://twitter.com/votoaj/status/1427587274670329857?s=20), [GitHub Code](https://github.com/votoaj/Statistical_Consequences_of_Fat_Tails)
+
+# Other Notes
+### Contact ✉
+How to reach me:
+* `@MFergal` on [Twitter](https://twitter.com/MFergal)
+
+### Contributors
+Special thanks to:
+* Daniel Reti: [github.com/drettt](https://github.com/drettt)
+
+### Python Package
+I started this project as a Python Package. Since then I shifted focus to python notebooks instead. Below are some notes about the packaged code and functions.
+
 Quick Access:
 * [`fattails.mad()`](https://github.com/FergM/fattails/blob/main/fattails/metrics.py#L7): Calculates mean absolute deviation.
 * [`fattails.plot_MS_moments()`](https://github.com/FergM/fattails/blob/main/fattails/express.py#L7): Plots the cumulative max/sum ratio of moments 1 to 4.
@@ -45,22 +67,6 @@ $ python
 Name: survival_probability, dtype: float64
 ```
 
-### 3. Derivations
+### Derivations
+Roughwork:
 * [How much data do I need?](https://github.com/FergM/fattails/blob/main/docs/Notes-02%20-%20Derivation%20-%20How%20much%20data%20do%20I%20need.pdf)
-
-## Contact
-Jump straight to [discussions](https://github.com/FergM/fattails/discussions) or check out the [contributing guidelines](https://github.com/FergM/fattails/blob/main/docs/CONTRIBUTING.md). Feedback and suggestions are really appreciated!
-
-### Contributors
-Special thanks to:
-* Daniel Reti: [github.com/drettt](https://github.com/drettt)
-
-# External Resources
-Technical Incerto Book One:
-* Free PDF: [researchers.one](https://researchers.one/articles/20.01.00018), [arxiv.org](https://arxiv.org/abs/2001.10488)
-* Errata: [fooledbyrandomness.com](https://www.fooledbyrandomness.com/Errata2020FirstEdition.pdf)
-
-More Links:
-* Incerto Reading Club: [Website](http://www.techincertoreadingclub.com/), [GitHub](https://github.com/Technical-Incerto-Reading-Club/code-examples)
-* [`StatisticalConsequencesOfFatTails`](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails): Code and Links collected by [Marcos Carreira](https://github.com/MarcosCarreira)
-* Anthony Voto: Diagnosing the SP500 [Twitter thread](https://twitter.com/votoaj/status/1427587274670329857?s=20), [GitHub Code](https://github.com/votoaj/Statistical_Consequences_of_Fat_Tails)
