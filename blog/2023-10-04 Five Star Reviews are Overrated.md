@@ -57,6 +57,38 @@ Checks
 
 ##### Trinomial Solved as Multinomial
 
-##### Multinomial with n dimensions
+##### Multinomial with k dimensions
+
+~First, you know how to get the entropy for all possible **p** solutions
+
+Assumptions
+* You have been told average rating (stars out of five, e.g. 4.8/5)
+* You know the sample size *n* (e.g. number of reviews that the restaurant has, be it 1, 3, 7 or 1,234)
+* you have k dimensions (think of this as solving the probabilities for the faces of a k-sided dice; p_1 through to p_k)
+
+Next we look at the outcome space
+* We have an **x** vector where x_j represents the number of times where the jth face comes up
+* We can generate, knowing *k* and *n* all the possible outcomes (ranging from every one of the n trials landing on face j through to various distributions of the n trials across the faces 1 through to k)
+
+For each possible outcome
+1. Flag whether it's even possible (sum of x_js must sum to *n*)
+2. Flag whether each scenario exceeds the average rating (say 4.8/5 is what we assumed above) (roughwork alert: I need to clarify why I am doing this. It's because I know the average rating and the number of samples, but nothing else.)
+3. Calculate the probability of that outcome (use the multinomial formula, a function of ~ *n*, **x** vector and **p** vector)
+
+Finally
+* You add up the probabilities where
+    * Event is possible
+    * AND
+    * Event average exceeds 4.8/5
+* Voila, you have the percentile which corresponds to your choice of **p** vector, now play around with **p** until you get one which makes the observed threshold a median outcome
+* And finally, I need to check what sort of cases give more than one solution, but you further work on this by adding constraints to the permitted **p** space to match reality
+* And if you have multiple possibilities remaing you then restrict to the **p** solution(s) which maximise entropy...
 
 ### Explanation
+
+### ToDo
+* Relate all this to the brandeis dice problem (the one where we don't factor for sample size)
+* And relate all this to the binomial problem solved in Nassim's blog
+
+### Application Notes
+* This is mainly useful in the small sample space, where you have a handful of reviews (with less you can't do much, with more than 30 or so the binomial starts to converge to it's true generating distribution (law of large numbers))
