@@ -14,13 +14,13 @@ Definition of [Shannon Entropy](https://en.wikipedia.org/wiki/Entropy_(informati
   
   ![Shannon Entropy Definition](./images/2023-10-16%20Shannon%20Entropy.png)
 
-* As a convention I will use the term "*summand function*" for the following expression:
+* As a convention I will use the term **"*summand function*"** for the following expression:
 
     ![Shannon Entropy Summand](./images/2023-10-16%20Shannon%20Entropy%20Summand.png)
     
-* I will also propose alternative *summand functions* which achieve the same outcome
+* **I will also propose alternative *summand functions*** which achieve the same outcome
 
-Alternative Definitions of the *summand function*:
+### Alternative Definitions of the *summand function*:
 * We can define any generic function of p, say *f(p)* as long as the function is concave (negative second derivative)
 * We can replace log(p) with any of the following and still get similar results
     * p
@@ -35,14 +35,11 @@ Alternative Definitions of the *summand function*:
 ## 2. Behaviour of the summand expression
 This is the key part you need to understand.
 
-What you want to do is plot the *summand function*
-* For example:
-    ![Shannon Entropy Summand](./images/2023-10-16%20Shannon%20Entropy%20Summand.png)
-
-Then you'll see that you want a concave *summand function*. 
+1. What you want to do is plot the *summand function*
+2. Then you'll see that you want a concave *summand function*
 
 Why?
-* Want the p_i == p_j etc. solution to have the maximum entropy
+* Want the `p_i == p_j` etc. solution to have the maximum entropy
 * That is, the maximum entropy should happen when you assume you know nothing, therefore you cannot reasonably say that any index of p has a greater value than any other
 
 What next
