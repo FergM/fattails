@@ -9,13 +9,16 @@ Sections
 3. Extension to more dimensions
 
 ## 1. Definition of Shannon Entropy
-Definition of Shannon Entropy:
-* Defined as:
-    ![Shannon Entropy Definition](./images/2023-10-16%20Shannon%20Entropy.png)
-  Wikipedia Page: [Link Here](https://en.wikipedia.org/wiki/Entropy_(information_theory))
-* As a convention I will use the term *summand function* for the following expression:
+Definition of [Shannon Entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory))
+:
+  
+  ![Shannon Entropy Definition](./images/2023-10-16%20Shannon%20Entropy.png)
+
+* As a convention I will use the term "*summand function*" for the following expression:
+
     ![Shannon Entropy Summand](./images/2023-10-16%20Shannon%20Entropy%20Summand.png)
-* I will then propose alternative *summand functions* which achieve the same outcome
+    
+* I will also propose alternative *summand functions* which achieve the same outcome
 
 Alternative Definitions of the *summand function*:
 * We can define any generic function of p, say *f(p)* as long as the function is concave (negative second derivative)
