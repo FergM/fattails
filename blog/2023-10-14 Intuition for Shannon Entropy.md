@@ -10,24 +10,31 @@ Sections
 
 ## 1. Definition of Shannon Entropy
 Definition of Shannon Entropy:
-* Defined as sum of `-1\*p\*log(p)`
-* As a convention I will call `-1\*p\*log(p)` the *summand function* and then propose alternative *summand functions* which achieve the same outcome
+* Defined as:
+    ![Shannon Entropy Definition](./images/2023-10-16%20Shannon%20Entropy.png)
+  Wikipedia Page: [Link Here](https://en.wikipedia.org/wiki/Entropy_(information_theory))
+* As a convention I will use the term *summand function* for the following expression:
+    ![Shannon Entropy Summand](./images/2023-10-16%20Shannon%20Entropy%20Summand.png)
+* I will then propose alternative *summand functions* which achieve the same outcome
 
-Alternative Definitions that give similar results:
+Alternative Definitions of the *summand function*:
 * We can define any generic function of p, say *f(p)* as long as the function is concave (negative second derivative)
-* We can replace log(p) with any of the following
+* We can replace log(p) with any of the following and still get similar results
     * p
     * p^2 (or even p^n where n is any integer) **
     * e^p
     * r^p where r is a positive real number
     * p^r where r is a positive real number
+* In fact typically the result will be the exact same, I need to check for constrained multidimensional cases where the choice of *summand function* affects the result
 
 *\*\* Might also work for looser conditions*
 
 ## 2. Behaviour of the summand expression
 This is the key part you need to understand.
 
-What you want to do is plot the *summand function* (e.g. `-1\*p\*log(p)`)
+What you want to do is plot the *summand function*
+* For example:
+    ![Shannon Entropy Summand](./images/2023-10-16%20Shannon%20Entropy%20Summand.png)
 
 Then you'll see that you want a concave *summand function*. 
 
