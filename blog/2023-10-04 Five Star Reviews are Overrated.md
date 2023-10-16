@@ -28,6 +28,8 @@ Summary
 * We can define the cdf for X<=x_observed
 * Set p such that the observed result is a median for the CDF
 
+Comment: setting p so that the observed result is a median is not the same as a max entropy approach? CDF and entropy of different sets of states are different tings? I added a script to calc max entropy for coins and then stars. I haven't yet confirmed not equivalent to taking CDF approach but I don't think CDF factors in the concavity needed to land on the max entropy solution.
+
 ##### Binomial Solved as Multinomial
 See 2023-10-04 Wolfram Notebook
 
