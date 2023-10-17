@@ -12,12 +12,12 @@ Sections
 Definition of [Shannon Entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory))
 :
   
-  ![Shannon Entropy Definition](./images/2023-10-16%20Shannon%20Entropy.png)
+  ![Shannon Entropy Definition](../images/2023-10-16%20Shannon%20Entropy.png)
 
 * As a convention I will use the term **"*summand function*"** for the following expression:
 
-    ![Shannon Entropy Summand](./images/2023-10-16%20Shannon%20Entropy%20Summand.png)
-    
+    ![Shannon Entropy Summand](../images/2023-10-16%20Shannon%20Entropy%20Summand.png)
+
 * **I will also propose alternative *summand functions*** which achieve the same outcome
 
 ### Alternative Definitions of the *summand function*:
@@ -53,6 +53,12 @@ Roughwork comment
 Conclusion
 * Basically if your *summand function* is concave, then the average of two different points on the function is *"lower"* than the value of the function if you *"move"* the p_heads and p_tails values to equal oneanother
 * More generally this concavity uses *Jensen's Inequality* to prioritise solutions which keep p_i and p_j apart from eachother
+
+Visual Intuition:
+* Suppose you have p=0.2 and q=0.8, then the summand in the entropy formula uses convexity to say "entropy is higher when you move p and q closer to eachother"
+* Basically entropy uses Jensen's inequality to define a principle of non-discrimination
+* You can use any function f(p) for entropy as long as the term is concave for 0<p<1
+![Entropy Intuition Plot](../images/2023-10-16%20Entropy%20Intuition%20Plot.png)
 
 Application
 * So as an application, you add constraints which resemble the problem you want to solve
