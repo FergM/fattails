@@ -28,7 +28,7 @@ Technical Incerto Book One:
 * Errata: [fooledbyrandomness.com](https://www.fooledbyrandomness.com/Errata2020FirstEdition.pdf)
 
 More Links:
-* Incerto **Reading Club**: [Website](http://www.techincertoreadingclub.com/)
+* **Uncertainty Reading Club**: [Website](http://www.techincertoreadingclub.com/)
 * [`StatisticalConsequencesOfFatTails`](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails): Code and Links collected by [Marcos Carreira](https://github.com/MarcosCarreira)
 * Anthony Voto: Diagnosing the SP500 [Twitter thread](https://twitter.com/votoaj/status/1427587274670329857?s=20), [GitHub Code](https://github.com/votoaj/Statistical_Consequences_of_Fat_Tails)
 
