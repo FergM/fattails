@@ -4,9 +4,14 @@ Notes and Code for fat-tailed statistics. Inspired by Nassim Taleb's Technical I
 [![PyPI - License](https://img.shields.io/pypi/l/fattails)](https://github.com/FergM/fattails/blob/main/LICENSE)
 
 # Table of Contents
-* [My Notebooks](#notebooks)
-* [External Resources](#external-resources)
-* [Other Notes](#other-notes)
+* 1. [Blog](./blog)
+* 2. [Python Notebooks](#notebooks)
+* 3. [External Resources](#external-resources)
+* [Other](#other-notes)
+
+### Blog
+See [fattails/blog/](./blog)
+* 2023-10: I am drafting some articles about Entropy as used in information theory.
 
 ### Notebooks
 See the [notebooks/README.md](https://github.com/FergM/fattails/blob/main/notebooks/README.md) for more detail.
