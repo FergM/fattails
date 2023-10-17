@@ -1,8 +1,6 @@
 # Fat Tails
 Notes and Code for fat-tailed statistics. Inspired by Nassim Taleb's Technical Incerto.
 
-[![PyPI - License](https://img.shields.io/pypi/l/fattails)](https://github.com/FergM/fattails/blob/main/LICENSE)
-
 # Table of Contents
 * 1. [Blog](./blog)
 * 2. [Python Notebooks](#notebooks)
