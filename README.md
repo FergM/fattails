@@ -7,6 +7,7 @@ Notes and Code for fat-tailed statistics. Inspired by Nassim Taleb's Technical I
 * 3. [External Resources](#external-resources)
 * [Other](#other-notes)
 
+# Main Notes
 ### Blog
 See [fattails/blog/](./blog)
 * 2023-10: I am drafting some articles about Entropy as used in information theory.
