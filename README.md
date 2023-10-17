@@ -29,7 +29,7 @@ Technical Incerto Book One:
 
 More Links:
 * **Uncertainty Reading Club**: [Website](http://www.techincertoreadingclub.com/)
-* [`StatisticalConsequencesOfFatTails`](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails): Code and Links collected by [Marcos Carreira](https://github.com/MarcosCarreira)
+* Code and Links collected by Marcos Carreira: [`StatisticalConsequencesOfFatTails`](https://github.com/MarcosCarreira/StatisticalConsequencesOfFatTails)
 * Anthony Voto: Diagnosing the SP500 [Twitter thread](https://twitter.com/votoaj/status/1427587274670329857?s=20), [GitHub Code](https://github.com/votoaj/Statistical_Consequences_of_Fat_Tails)
 
 # Other Notes
