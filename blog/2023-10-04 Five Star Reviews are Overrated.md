@@ -17,20 +17,19 @@ Aha this looks like something that can be solved using *entropy*. I just need a 
 
 ### Solution
 ##### Binomial Problem
-* See Marcos Slides
-* See Nassim Blog
-* See 2023-10-04 Wolfram Notebook
-    * called `2023-10-04 BLOG DRAFT Five Star Reviews are Overrated.nb`
-    * copy saved in this entropy directory on dropbox
-
 Summary
 * Given p, n and x (probability, number of samples, number of successes)
 * We can define the cdf for X<=x_observed
 * Set p such that the observed result is a median for the CDF
 
-##### Binomial Solved as Multinomial
-See 2023-10-04 Wolfram Notebook
+Roughwork Notes:
+* See Marcos Slides
+* See Nassim Blog
+* See 2023-10-04 Wolfram Notebook
+    * called `2023-10-04 BLOG DRAFT Five Star Reviews are Overrated.nb`
 
+
+##### Binomial Solved as Multinomial
 Summary
 * We want to know p1 & p2
 * We know n
