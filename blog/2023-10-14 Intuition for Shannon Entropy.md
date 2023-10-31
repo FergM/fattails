@@ -20,7 +20,7 @@ To understand why/how Shannon Entropy works, you need to understand the shape of
 
 Visual Intuition:
 * The image here below plots the *summand function*. The x-axis is *p* and the y-axis is the function applied to *p*.
-* Suppose you have biased coin with probabilities `p_heads` and `p_tails`. The entropy is maximised by setting `p_heads=p_tails` and this happens *because* the shape is convex.
+* Suppose you have biased coin with probabilities `p_heads` and `p_tails`. The entropy is maximised by setting `p_heads = p_tails` and this happens *because* the shape is convex.
 * Suppose `p_heads`=0.2 and `p_tails`=0.8. You can visually see from the plot that moving both to the average value (0.2+0.8)/2= 0.5 gives a greater entropy.
 * ***Basically entropy uses Jensen's inequality to define a principle of non-discrimination***
 * In fact, you can use any function *f(p)* for entropy as long as the term is concave on the interval 0<p<1
