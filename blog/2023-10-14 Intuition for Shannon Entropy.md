@@ -1,24 +1,18 @@
-# About
-An article outlining the intuition behind Shannon Entropy and how it works for information theory.
-
-Article Status: **Roughwork**
-
+# Intuition for *Shannon Entropy*
 Sections
 1. Definition of Shannon Entropy
 2. Behaviour of the summand expression
 3. Extension to more dimensions
 
 ## 1. Definition of Shannon Entropy
-Definition of [Shannon Entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory))
-:
+Definition of [*Shannon Entropy*](https://en.wikipedia.org/wiki/Entropy_(information_theory))
+, for a discrete probability distribution:
   
   ![Shannon Entropy Definition](../images/2023-10-16%20Shannon%20Entropy.png)
 
-* As a convention I will use the term **"*summand function*"** for the following expression:
+As a convention I will use the term **"*summand function*"** for the expression which gets added. So for *Shannon Entropy* the *summand function* is this:
 
-    ![Shannon Entropy Summand](../images/2023-10-16%20Shannon%20Entropy%20Summand.png)
-
-* **I will also propose alternative *summand functions*** which achieve the same outcome
+  ![Shannon Entropy Summand](../images/2023-10-16%20Shannon%20Entropy%20Summand.png)
 
 ### Alternative Definitions of the *summand function*:
 * We can define any generic function of p, say *f(p)* as long as the function is concave (negative second derivative)
