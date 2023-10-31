@@ -1,9 +1,9 @@
 # Intuition for *Shannon Entropy*
 Sections:
-1. [Definition of Entropy](#1-definition-of-entropy)
-2. [How Entropy Works](#2-why-does-entropy-work)
-3. [Multiple Dimensions](#3-multiple-dimensions)
-4. [Appendix](#appendix)
+* 1. [Definition of Entropy](#1-definition-of-entropy)
+* 2. [How Entropy Works](#2-why-does-entropy-work)
+* 3. [Multiple Dimensions](#3-multiple-dimensions)
+* [Appendix](#appendix)
 
 ## 1. Definition of Entropy
 Definition of [*Shannon Entropy*](https://en.wikipedia.org/wiki/Entropy_(information_theory))
