@@ -18,13 +18,21 @@ As a convention I will use the term **"*summand function*"** for the expression 
 ## 2. *Why* does Entropy Work?
 To understand why/how Shannon Entropy works, you need to understand the shape of the *summand function*.
 
-Visual Intuition:
+### Visual Intuition:
 * The image here below plots the *summand function*. The x-axis is *p* and the y-axis is the function applied to *p*.
 * Suppose you have biased coin with probabilities `p_heads` and `p_tails`. The entropy is maximised by setting `p_heads = p_tails` and this happens *because* the shape is convex.
 * Suppose `p_heads`=0.2 and `p_tails`=0.8. You can visually see from the plot that moving both to the average value (0.2+0.8)/2= 0.5 gives a greater entropy.
 * ***Basically entropy uses Jensen's inequality to define a principle of non-discrimination***
 * In fact, you can use any function *f(p)* for entropy as long as the term is concave on the interval 0<p<1
 ![Entropy Intuition Plot](../images/2023-10-16%20Entropy%20Intuition%20Plot.png)
+
+### Engineering Intuition (Thermodynamics)
+Maximum entropy is equivalent to thermal equilibrium
+* The *passage of time* in thermodynamics is analogous to *loss of information* in information theory
+* Thermodynamics: The more time that passes the closer your system gets to thermal equilibrium
+* Information Theory: The less information you have the more you should assume equilibrium (i.e. all states equally likely)
+
+### Other
 
 Application
 * So as an application, you add constraints which resemble the problem you want to solve
