@@ -26,11 +26,12 @@ As a convention I will use the term **"*summand function*"** for the expression 
 
 *\*\* Might also work for looser conditions*
 
-## 2. Behaviour of the summand expression
-This is the key part you need to understand.
+## 2. *Why* does Entropy Work?
+To understand why/how Shannon Entropy works, you need to understand the shape of the *summand function*.
 
-1. What you want to do is plot the *summand function*
-2. Then you'll see that you want a concave *summand function*
+Intuition
+1. Plot the *summand function*
+2. Observe that the *summand function* is concave...
 
 Why?
 * Want the `p_i == p_j` etc. solution to have the maximum entropy
@@ -40,9 +41,6 @@ What next
 * You start applying constraints to the values of p you want to accept
 * This restricts p and then from here you can look and see what available solution has the max entropy
 * And within the available solutions you want to continue this logic of *"penalising discrimination"*
-
-Roughwork comment
-* I'm going to be hand wavy here for now
 
 Conclusion
 * Basically if your *summand function* is concave, then the average of two different points on the function is *"lower"* than the value of the function if you *"move"* the p_heads and p_tails values to equal oneanother
