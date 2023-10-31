@@ -15,6 +15,11 @@ As a convention I will use the term **"*summand function*"** for the expression 
 
   ![Shannon Entropy Summand](../images/2023-10-16%20Shannon%20Entropy%20Summand.png)
 
+How do you apply Shannon Entropy to probability distributions:
+* Problem: You want to estimate what distribution you are dealing with
+* Solution: Add whatever constraints you want and then choose a probability distribution (values for *p_i*) which maximises the Shannon Entropy.
+* Result: The max entropy distribution can be seen as a best guess starting point which makes the least amount of assumptions.
+
 ## 2. *Why* does Entropy Work?
 To understand why/how Shannon Entropy works, you need to understand the shape of the *summand function*.
 
