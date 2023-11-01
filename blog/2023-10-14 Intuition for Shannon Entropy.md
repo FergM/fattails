@@ -64,7 +64,14 @@ Conclusion
 
 
 ## 3. Multiple Dimensions
-It extends relatively easily. Where it gets interesting is when you constrain the **p** space. I want to explore this more and see whether the choice of *summand function*
+It extends relatively easily. Where it gets interesting is when you constrain the **p** space.
+
+For an applied example see the **next section**:
+* [Application: Food Reviews with a Small Sample  Size](./2023-10-04%20Five%20Star%20Reviews%20are%20Overrated.md)
+
+Roughwork:
+* In multiple dimensions, does the *summand function* still just need to be concave?
+* Is there ever a case where the choice of concave *summand function* affects the result?
 
 # Appendix
 ### Alternative Definitions of the *summand function*:
