@@ -114,6 +114,39 @@ def hidden_moment_samples(meta_n, hidden_moment_func, n, moment):
 
     return hidden_moment_samples
 
+def make_hidden_moment_convergence_data(n_max=10, meta_n=10, moment=0):
+    """Generate hidden moment samples for varying sample sizes from the normal distribution.
+
+    Each key maps to an array of hidden moments.
+    Each key represents a different sample size from the raw distribution.
+
+    ToDo:
+    * Generalise this function so it works for other distributions
+    * Generalise this function so it works for other statistics (not just hidden moments)   
+
+    Parameters
+    ----------
+    n_max
+        The largest sample size to take from the raw distribution
+    meta_n
+        The number of hidden moments to sample for each sample size n
+    moment : int >=0
+        The moment of interest
+        * 0th moment is hidden probability
+        * 1st is hidden mean, 2nd is hidden variance ...
+    """
+    
+    data = {sample_size : hidden_moment_samples(
+                                meta_n = meta_n,
+                                hidden_moment_func = sample_gaussian_hidden_moment,
+                                n = sample_size,
+                                moment = moment)
+
+                for sample_size in range(1, n_max+1)
+           }
+    
+    return data
+
 
 if __name__ == "__main__":
 
