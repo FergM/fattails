@@ -1,7 +1,9 @@
 import dash
 from dash import dcc, html
+from dash.dependencies import Input, Output
 import numpy as np
 import pandas as pd
+import plotly.express as px
 import plotly.graph_objs as go
 
 import hidden_moments as hide
@@ -10,13 +12,13 @@ import hidden_moments as hide
 # ------------------------------------------------------------------------------------
 # FUNCTIONS
 
-def get_data(n_max, meta_n, moment, source='new'):
+def get_data(n_max=None, meta_n=None, moment=None, source='new'):
 
     if source=='new':
         # GENERATE DATA
         # Speed Note: Takes a minute to run for n_max=40, meta_n=50, moment=0
         print("STARTING TO GENERATE DATA")
-        hidden_moment_values = hide.make_hidden_moment_convergence_data(n_max=40, meta_n=50, moment=moment)
+        hidden_moment_values = hide.make_hidden_moment_convergence_data(n_max, meta_n, moment=moment)
         print("FINISHED GENERATING DATA")
 
     elif source=='pickle':
@@ -78,30 +80,84 @@ def make_plots(hidden_moment_values):
 
     return plots
 
+
+def histogram_w_slider(meta_sample):
+    """
+    meta_sample
+        Dictionary with sample size as keys
+        And each key maps to a list of values
+    """
+
+    keys = meta_sample.keys()
+    #slider_min, slider_max = min(keys), max(keys)
+    #slider_marks = [{'label': str(key), 'value': key} for key in keys]
+
+    # largest_value = meta_sample.abs().max().max()
+
+    histogram_layout = [
+                        html.H1("Histogram Title"),
+                        
+                        dcc.Slider(0,40,1,
+                                   id="sample-size",
+                                   value=min(keys), 
+                                  ),
+                        
+                        # Histogram plot
+                        dcc.Graph(id='histogram'),
+                       ]
+
+    return histogram_layout
+
 # ------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------
 # SETUP
 moment = 0
 
-hidden_moment_values = get_data(n_max=40, 
-                                meta_n=50, 
+hidden_moment_values = get_data(n_max=40,
+                                meta_n=500, 
                                 moment=moment,
                                 source='pickle')
 
+df = pd.DataFrame(hidden_moment_values)
+
 plots = make_plots(hidden_moment_values)
 
-# Run the app
+histogram_layout = histogram_w_slider(hidden_moment_values)
+
+# ------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------
+# APP
 if __name__ == '__main__':
 
     # Create Dash app
     app = dash.Dash(__name__)
 
+
+
+    # ------------------------------------------------------------------------------------
+    # CALLBACKS
+    @app.callback(
+                    Output('histogram', 'figure'),
+                    [Input('sample-size', 'value')]
+    )
+    def update_histogram(selected_key):
+
+        largest_value = df.max().max()
+
+        fig = px.histogram(df,
+                           x=selected_key,
+                           title=f'Histogram for Key {selected_key}',
+                           range_x=[0, largest_value],
+        )
+        
+        return fig
+
     # ------------------------------------------------------------------------------------
     # ------------------------------------------------------------------------------------
     # LAYOUT
-
     app.layout = html.Div(
-                          plots,
+                            plots \
+                          + histogram_layout
                          )
 
     app.run_server(debug=True)
