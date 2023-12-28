@@ -22,7 +22,7 @@ def get_data(n_max=None, meta_n=None, moment=None, source='new'):
         print("FINISHED GENERATING DATA")
 
     elif source=='pickle':
-        hidden_moment_values = pd.read_pickle('hidden_moment_zero_5000_samples.pkl')
+        hidden_moment_values = pd.read_pickle(f'hidden_moment_{moment}_samples_5000.pkl')
 
     else:
         # Simplified Dataset
