@@ -22,7 +22,7 @@ def get_data(n_max=None, meta_n=None, moment=None, source='new'):
         print("FINISHED GENERATING DATA")
 
     elif source=='pickle':
-        hidden_moment_values = pd.read_pickle('hidden_moment_samples.pkl')
+        hidden_moment_values = pd.read_pickle('hidden_moment_zero_5000_samples.pkl')
 
     else:
         # Simplified Dataset
@@ -36,14 +36,40 @@ def make_plots(hidden_moment_values):
     
     hidden_moment_values : 
     """
+    # ------------------------------------------------------------------------------------
+    # THEORETICAL VALUES
+    # Theoretical Values for expected mu of the 0th moment 
 
-    # Calculate Average Values
-    average_values = {key: np.mean(value) for key, value in hidden_moment_values.items()}
+    def mu(n):
+        return (1 - 2**(-n)) / (n + 1)
+
+    # Define the approximation function
+    def mu_approx(n):
+        return 1 / n
+
+
+    n_values = np.arange(1, 40)
+
+    # Calculate corresponding mu values using NumPy directly for both functions
+    mu_values = pd.Index(n_values).map(mu)
+    mu_values = np.array(mu_values)
+
+    mu_approx_values = pd.Index(n_values).map(mu_approx)
+    mu_approx_values = np.array(mu_approx_values)
+
+
 
     # ------------------------------------------------------------------------------------
     # MAKE TRACES
+
+    # Calculate Average Values
+    theory_values = dict(zip(n_values, mu_values))
+    approx_values = dict(zip(n_values, mu_approx_values))
+    average_values = {key: np.mean(value) for key, value in hidden_moment_values.items()}
     
     # Line Traces
+    theory_trace = go.Scatter(x=list(theory_values.keys()), y=list(theory_values.values()), mode='lines+markers', name='Theory')
+    approx_trace = go.Scatter(x=list(approx_values.keys()), y=list(approx_values.values()), mode='lines+markers', name='Approx')
     average_trace = go.Scatter(x=list(average_values.keys()), y=list(average_values.values()), mode='lines+markers', name='Average')
     
     # Point Traces
@@ -55,7 +81,7 @@ def make_plots(hidden_moment_values):
     plots = [dcc.Graph(
                       id='average-plot',
                       figure={
-                          'data': [average_trace,]
+                          'data': [average_trace, theory_trace, approx_trace]
                                   + raw_data_traces,
                           'layout': go.Layout(
                               title='Convergence of the Average',
@@ -110,31 +136,29 @@ def histogram_w_slider(meta_sample):
 
 # ------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------
-# SETUP
-moment = 0
-
-hidden_moment_values = get_data(n_max=40,
-                                meta_n=500, 
-                                moment=moment,
-                                source='pickle')
-
-df = pd.DataFrame(hidden_moment_values)
-
-plots = make_plots(hidden_moment_values)
-
-histogram_layout = histogram_w_slider(hidden_moment_values)
-
-# ------------------------------------------------------------------------------------
-# ------------------------------------------------------------------------------------
 # APP
 if __name__ == '__main__':
+    # --------------------------------------------------------------------------------
+    # SETUP
+    moment = 0
+
+    hidden_moment_values = get_data(n_max=40,
+                                    meta_n=500, 
+                                    moment=moment,
+                                    source='pickle')
+
+    df = pd.DataFrame(hidden_moment_values)
+
+    plots = make_plots(hidden_moment_values)
+
+    histogram_layout = histogram_w_slider(hidden_moment_values)
 
     # Create Dash app
     app = dash.Dash(__name__)
 
 
 
-    # ------------------------------------------------------------------------------------
+    # --------------------------------------------------------------------------------
     # CALLBACKS
     @app.callback(
                     Output('histogram', 'figure'),
@@ -152,8 +176,8 @@ if __name__ == '__main__':
         
         return fig
 
-    # ------------------------------------------------------------------------------------
-    # ------------------------------------------------------------------------------------
+    # --------------------------------------------------------------------------------
+    # --------------------------------------------------------------------------------
     # LAYOUT
     app.layout = html.Div(
                             plots \
