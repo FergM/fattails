@@ -62,46 +62,47 @@ def make_plots(hidden_moment_values):
     # ------------------------------------------------------------------------------------
     # MAKE TRACES
 
-    # Calculate Average Values
+    # Calculate Median Values
     theory_values = dict(zip(n_values, mu_values))
     approx_values = dict(zip(n_values, mu_approx_values))
-    average_values = {key: np.mean(value) for key, value in hidden_moment_values.items()}
+    median_values = {key: np.median(value) for key, value in hidden_moment_values.items()}
+    mean_values   = {key: np.mean(value)   for key, value in hidden_moment_values.items()}
     
     # Line Traces
-    theory_trace = go.Scatter(x=list(theory_values.keys()), y=list(theory_values.values()), mode='lines+markers', name='Theory')
-    approx_trace = go.Scatter(x=list(approx_values.keys()), y=list(approx_values.values()), mode='lines+markers', name='Approx')
-    average_trace = go.Scatter(x=list(average_values.keys()), y=list(average_values.values()), mode='lines+markers', name='Average')
+    theory_trace = go.Scatter(x=list(theory_values.keys()), y=list(theory_values.values()), mode='lines+markers', name='Theoretical Mean')
+    approx_trace = go.Scatter(x=list(approx_values.keys()), y=list(approx_values.values()), mode='lines+markers', name='1/n Mean Approximation')
+    median_trace = go.Scatter(x=list(median_values.keys()), y=list(median_values.values()), mode='lines+markers', name='Median from Simulations')
+    mean_trace   = go.Scatter(x=list(mean_values.keys()),   y=list(mean_values.values()),   mode='lines+markers', name='Mean from Simulations')
     
-    # Point Traces
-    # Format the raw datapoints as traces
-    raw_data_traces = []
-    for key, values in hidden_moment_values.items():
-        raw_data_traces.append(go.Scatter(x=[key] * len(values), y=values, mode='markers', name=key))
+    # # Point Traces
+    # # Format the raw datapoints as traces
+    # raw_data_traces = []
+    # for key, values in hidden_moment_values.items():
+    #     raw_data_traces.append(go.Scatter(x=[key] * len(values), y=values, mode='markers', name=key))
 
     plots = [dcc.Graph(
-                      id='average-plot',
+                      id='convergence-plot',
                       figure={
-                          'data': [average_trace, theory_trace, approx_trace]
-                                  + raw_data_traces,
+                          'data': [median_trace, mean_trace, theory_trace, approx_trace],  # + raw_data_traces,
                           'layout': go.Layout(
-                              title='Convergence of the Average',
+                              title='Hidden Moment and Sample Size',
                               xaxis=dict(title='Sample Size'),
                               yaxis=dict(title=f'Hidden Moment: {moment}'),
                           )
                       }
                      ),
 
-             dcc.Graph(
-                       id='scatter-plot',
-                       figure={
-                           'data': raw_data_traces,
-                           'layout': {
-                               'title': 'Raw Data For Each Sample Size',
-                               'xaxis': {'title': 'Sample Size'},
-                               'yaxis': {'title': f'Hidden Moment: {moment}'}
-                           }
-                       }
-                      ),
+            #  dcc.Graph(
+            #            id='scatter-plot',
+            #            figure={
+            #                'data': raw_data_traces,
+            #                'layout': {
+            #                    'title': 'Raw Data For Each Sample Size',
+            #                    'xaxis': {'title': 'Sample Size'},
+            #                    'yaxis': {'title': f'Hidden Moment: {moment}'}
+            #                }
+            #            }
+            #           ),
             ]
 
     return plots
@@ -123,7 +124,7 @@ def histogram_w_slider(meta_sample):
     histogram_layout = [
                         html.H1("Histogram Title"),
                         
-                        dcc.Slider(0,40,1,
+                        dcc.Slider(1,40,1,
                                    id="sample-size",
                                    value=min(keys), 
                                   ),
@@ -170,8 +171,9 @@ if __name__ == '__main__':
 
         fig = px.histogram(df,
                            x=selected_key,
-                           title=f'Histogram for Key {selected_key}',
+                           title=f'Histogram for Sample Size: {selected_key}',
                            range_x=[0, largest_value],
+                           labels={'x': f'Hidden Moment'},
         )
         
         return fig
